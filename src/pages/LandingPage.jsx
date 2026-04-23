@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 
-const TYPEWRITER_LINES = ["Detect. Treat.", "Buy Real.", "Grow More."];
+const TYPEWRITER_LINES_EN = ["Detect. Treat.", "Buy Real.", "Grow More."];
 
 const STATS = [
   { number: "140M+", label: "Farmers in India", sub: "किसान" },
@@ -129,7 +129,7 @@ function FlowStep({ step, title, desc, idx }) {
 }
 
 export default function LandingPage({ setCurrentPage }) {
-  const { display, done, finalLine } = useTypewriter(TYPEWRITER_LINES);
+  const { display, done, finalLine } = useTypewriter(TYPEWRITER_LINES_EN);
   const [probRef, probVisible] = useInView(0.1);
   const [showSolution, setShowSolution] = useState(false);
   const [heroRef, heroVisible] = useInView(0.01);

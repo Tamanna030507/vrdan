@@ -9,6 +9,7 @@ import MandiIntel from "./pages/MandiIntel";
 import QRTrace from "./pages/QRTrace";
 import NewsPage from "./pages/NewsPage";
 import PoliciesPage from "./pages/PoliciesPage";
+import FarmerProfile from "./pages/FarmerProfile";
 import CropIntel from "./pages/CropIntel";
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
     if (currentPage === "qr") return <QRTrace />;
     if (currentPage === "news") return <NewsPage />;
     if (currentPage === "policies") return <PoliciesPage />;
+    if (currentPage === "profile") return <FarmerProfile />;
     if (currentPage === "cropwar") return <CropIntel />;
     return <LandingPage setCurrentPage={navigateTo} />;
   };

@@ -9,13 +9,3 @@ root.render(
     <App />
   </React.StrictMode>
 );
-
-// Register service worker for PWA
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker
-      .register('/sw.js')
-      .then((reg) => console.log('VRDAN SW registered:', reg.scope))
-      .catch((err) => console.log('VRDAN SW failed:', err));
-  });
-}
